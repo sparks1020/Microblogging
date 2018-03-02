@@ -1,4 +1,17 @@
 ﻿body {
+    
+}
+
+footer {
+    position: relative;
+    top: 1000px;
+}
+
+.card-img-top-1 {
+    background-color: #D3D3D3;
+    height: 150px;
+    margin-bottom: 20px;
+
 }
 
 .btn-primary {
@@ -13,10 +26,22 @@
     margin-bottom: 20px;
 }
 
-.col-sm-3 {
-    
+.navigation a{
+    border-bottom: 3px solid;
 }
 
 .form-group {
     height: 75px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: none;
+    padding: 0px;
+    float: right;
+}
+
+li.menu-item {
+    display:inline-block;
+    padding: 10px;
 }

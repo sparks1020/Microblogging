@@ -10,7 +10,7 @@ namespace Microblogging.Controllers
     {
         public ActionResult Index()
         {
-            return View("MyFollowers");
+            return View();
         }
     }
 }

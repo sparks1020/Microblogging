@@ -6,15 +6,24 @@
     <link rel="stylesheet" type="text/css" href="/Content/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="/Content/bootstrap-reboot.min.css">
     <title>@ViewBag.Title</title>
-        
 </head>
 <body>
-<header class="container card-img-top">
+        <header>
+<div class="container card-img-top">
     <h2>Welcome to Fake Twitter: @ViewData["Intro"]</h2>
-    </header>
+</div>
+</header>     
         <div class="container">
+            <div class="navigation clearfix">
+        <ul class="menu">
+            <li class="menu-item">@Html.ActionLink("Profile", "Index", "User")</li>
+            <li class="menu-item">@Html.ActionLink("Post History", "History", "Post")</li>
+            <li class="menu-item">@Html.ActionLink("Followers", "Index", "Following")</li>
+            <li class="menu-item">@Html.ActionLink("Log out", "Login", "User")</li>
+                </ul>
+            </div>
         <div class="row">
-            <div class="button col-sm-3">
+            <div class="button col-sm-3 offset-sm-4">
                 <div>
                     @RenderBody()
 
@@ -22,6 +31,8 @@
             </div>
         </div>
        </div>
-	
+	<footer class="container card-img-top-1">
+            
+    </footer>
 </body>
 </html>
