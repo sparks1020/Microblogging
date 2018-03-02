@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap-reboot.min.css">
+    <title>@ViewBag.Title</title>
+        
+</head>
+<body>
+<header class="container card-img-top">
+    <h2>Welcome to Fake Twitter: @ViewData["Intro"]</h2>
+    </header>
+        <div class="container">
+        <div class="row">
+            <div class="button col-sm-3">
+                <div>
+                    @RenderBody()
+
+                </div>
+            </div>
+        </div>
+       </div>
+	
+</body>
+</html>

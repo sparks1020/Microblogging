@@ -1,0 +1,13 @@
+﻿<div>
+   <h3>Post something new</h3>
+	   @Html.ActionLink("Add Post", "Post", "Post", null, new { @class="btn btn-primary" })<br>
+   </div>
+<div>
+   <h3>All of your posts</h3>
+       @Html.ActionLink("History", "History", "Post", null, new { @class="btn btn-primary" }) <br>
+   </div>
+<div>
+   <h3>Who I'm following</h3>
+       @Html.ActionLink("Following", "Index", "Following", null, new { @class="btn btn-primary" })
+</div>
+            

@@ -1,0 +1,22 @@
+﻿@using Microblogging.Models
+
+@model IEnumerable<Microblog>
+
+
+<body>
+	<div>
+    <h3>Here is what you have posted:</h3>
+	</div>
+    @foreach (var item in Model)  
+       {  
+       <ul>  
+  
+           <li>  
+               @item.Content
+           </li>  
+           <li>  
+               @item.Published.ToShortDateString()
+           </li>   
+       </ul>  
+       }  
+</body>

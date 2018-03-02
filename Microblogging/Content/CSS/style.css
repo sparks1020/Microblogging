@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.btn-primary {
+    margin-bottom: 5px;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    background-color: #FFFF66;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.col-sm-3 {
+    
+}
+
+.form-group {
+    height: 75px;
+}

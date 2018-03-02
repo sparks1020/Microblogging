@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblogging", "Microblogging\Microblogging.csproj", "{D3C038E6-20C9-45C9-98A4-E99E307C34F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblogging.Tests", "Microblogging.Tests\Microblogging.Tests.csproj", "{8C02C6D1-1B93-41A1-B00E-BF9E328986D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3C038E6-20C9-45C9-98A4-E99E307C34F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C038E6-20C9-45C9-98A4-E99E307C34F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C038E6-20C9-45C9-98A4-E99E307C34F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C038E6-20C9-45C9-98A4-E99E307C34F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C02C6D1-1B93-41A1-B00E-BF9E328986D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C02C6D1-1B93-41A1-B00E-BF9E328986D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C02C6D1-1B93-41A1-B00E-BF9E328986D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C02C6D1-1B93-41A1-B00E-BF9E328986D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

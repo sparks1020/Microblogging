@@ -1,0 +1,26 @@
+﻿@model AuthenticationBase.Models.Authentication.RegistrationForm
+
+<form method="POST">
+<div style="color: red;">
+    @Model.ErrorMessage
+</div>
+<div>
+    <strong>Username</strong><br />
+    <input type="text" name="Username" placeholder="Username" value="@Model.Username" />
+</div>
+<div>
+    <strong>Password</strong><br />
+    <input type="password" name="Password" value="@Model.Password" />
+</div>
+<div>
+    <strong>Confirm</strong><br />
+    <input type="password" name="PasswordConfirm" value="@Model.PasswordConfirm" />
+</div>
+<div>
+    <strong>Email Address</strong><br />
+    <input type="email" name="EmailAddress" placeholder="joe@example.com" value="@Model.EmailAddress" />
+</div>
+<div>
+    <button type="submit">Register</button>
+</div>
+</form>
