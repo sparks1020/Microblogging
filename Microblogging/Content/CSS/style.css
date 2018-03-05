@@ -2,6 +2,12 @@
     
 }
 
+wrapper {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
 footer {
     position: relative;
     top: 1000px;

@@ -2,9 +2,13 @@
 
 @if (Model != null && Model.IsAuthenticated)
 {
+<div class="">
     <div>You are logged in as @(Model.Name). <a class="btn btn-primary" href="/User/Logout">Log Out</a> or <a class="btn btn-primary" href="/User">view profile</a></div>
+</div>
 }
 else
 {
+<div class="">
     <div>You are not logged in <a class="btn btn-primary" href="/User/Login">Log in</a> or <a class="btn btn-primary" href="/User/Register">Register</a></div>
+</div>
 }

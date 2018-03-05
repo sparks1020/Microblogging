@@ -13,12 +13,14 @@
     <h2>Welcome to Fake Twitter: @ViewData["Intro"]</h2>
 </div>
 </header>     
+        <div class="wrapper">
         <div class="container">
             <div class="navigation clearfix">
         <ul class="menu">
             <li class="menu-item">@Html.ActionLink("Profile", "Index", "User")</li>
             <li class="menu-item">@Html.ActionLink("Post History", "History", "Post")</li>
             <li class="menu-item">@Html.ActionLink("Followers", "Index", "Following")</li>
+            <li class="menu-item">@Html.ActionLink("Add Post", "Post", "Post")</li>
             <li class="menu-item">@Html.ActionLink("Log out", "Login", "User")</li>
                 </ul>
             </div>
@@ -34,5 +36,6 @@
 	<footer class="container card-img-top-1">
             
     </footer>
+            </div>
 </body>
 </html>

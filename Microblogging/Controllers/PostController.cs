@@ -48,7 +48,7 @@ namespace Microblogging.Controllers
             {
                 using (var db = new PostsContext())
                 {
-                var microblog = db.Posts.Where(p=>p.Author == ControllerContext.HttpContext.User.Identity.Name).ToList();
+                var microblog = db.Posts.Where(p=>p.Author == ControllerContext.HttpContext.User.Identity.Name).ToList().OrderByDescending(b=>b.Id);
                     return View(microblog);
                 }
             }
