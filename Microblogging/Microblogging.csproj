@@ -169,6 +169,8 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Following\Find.cshtml" />
+    <Content Include="Views\Following\MatchUser.cshtml" />
     <Content Include="Views\Following\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>

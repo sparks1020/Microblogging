@@ -1,0 +1,15 @@
+﻿@using Microblogging.Models
+@using AuthenticationBase.Models.Authentication
+
+@model IEnumerable<Account>
+
+<html>
+<body>
+    <div>
+    <h3>Results:</h3>
+    </div>
+    @foreach (var item in Model)  
+       {  
+           <p>@item.Username</p>
+       }  
+</body>

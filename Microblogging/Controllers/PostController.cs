@@ -32,7 +32,6 @@ namespace Microblogging.Controllers
             using (var db = new PostsContext())
             {
 
-                // Create the new account
                 db.Posts.Add(new Microblog
                 {
                     Author = ControllerContext.HttpContext.User.Identity.Name,
