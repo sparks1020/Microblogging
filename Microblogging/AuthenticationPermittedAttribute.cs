@@ -12,7 +12,7 @@ namespace AuthenticationBase
             var currentUser = filterContext.HttpContext.Session["user"] as Account;
             if (currentUser != null)
             {
-                filterContext.Principal = new LocalPrincipal(new LocalIdentity(currentUser.Username, currentUser.EmailAddress));
+                filterContext.Principal = new LocalPrincipal(new LocalIdentity(currentUser.Id, currentUser.Username, currentUser.EmailAddress));
             }
         }
 

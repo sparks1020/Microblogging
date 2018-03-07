@@ -11,5 +11,7 @@
     @foreach (var item in Model)  
        {  
            <p>@item.Username</p>
-       }  
+        
+     @Html.ActionLink("Follow", "Follow", "Following", new{Id = item.Id}, new { @class="btn btn-primary" }) 
+        }
 </body>

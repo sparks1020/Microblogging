@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{D3C038E6-20C9-45C9-98A4-E99E307C34F4}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Microblogging/Controllers/UserController.cs">
+    <Files>
+      <File FileName="Microblogging/Views/Home/Index.cshtml" Line="5" Column="15" />
+      <File FileName="Microblogging/Controllers/PostController.cs" Line="29" Column="43" />
+      <File FileName="Microblogging/Models/Microblog.cs" Line="2" Column="36" />
+      <File FileName="Microblogging/Models/Login.cs" Line="1" Column="1" />
+      <File FileName="Microblogging/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Microblogging/Database_files/PostsContext.cs" Line="3" Column="27" />
+      <File FileName="Microblogging/Views/Web.config" Line="24" Column="20" />
+      <File FileName="Microblogging/Web.config" Line="22" Column="42" />
+      <File FileName="Microblogging/Controllers/FollowingController.cs" Line="21" Column="42" />
+      <File FileName="Microblogging/Models/Post_ViewModel.cs" Line="1" Column="1" />
+      <File FileName="Microblogging/Models/Authentication/Account.cs" Line="1" Column="1" />
+      <File FileName="Microblogging/Controllers/UserController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Microblogging PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

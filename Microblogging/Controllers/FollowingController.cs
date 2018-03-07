@@ -6,14 +6,24 @@ using System.Web.Mvc;
 using AuthenticationBase;
 using AuthenticationBase.Models.Authentication;
 using Microblogging.Database_files;
+using Microblogging.Models;
 
 namespace Microblogging.Controllers
 {
     public class FollowingController : Controller
     {
-        public ActionResult Index()
+        [AuthenticationRequired]
+        public ActionResult Index(int Id, string Username)
         {
-            return View();
+            using (var db = new PostsContext())
+            {
+                var connections = db.Follows.Where(l => l.Id == Id).ToList();
+                var username = from u in db.Accounts
+                               where u.Username == Username
+                               select u;
+                return View();
+            }
+
         }
 
         [AuthenticationRequired]
@@ -42,5 +52,21 @@ namespace Microblogging.Controllers
                 return View(users);
             }
         }
+
+        [AuthenticationRequired]
+        public ActionResult Follow (int Id)
+        {
+            using (var db = new PostsContext())
+            {
+                db.Follows.Add(new Follow
+                {
+                    Following = Id,
+                    Followers = ((LocalIdentity)ControllerContext.HttpContext.User.Identity).Id
+                });
+            db.SaveChanges();
+            }
+            return View();                 
+        }
+
     }
 }

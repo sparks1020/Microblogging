@@ -124,6 +124,7 @@
     <Compile Include="Models\Microblog.cs" />
     <Compile Include="Database_files\PostsContext.cs" />
     <Compile Include="Models\Post_ViewModel.cs" />
+    <Compile Include="Models\Follow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -172,6 +173,7 @@
     <Content Include="Views\Following\Find.cshtml" />
     <Content Include="Views\Following\MatchUser.cshtml" />
     <Content Include="Views\Following\Search.cshtml" />
+    <Content Include="Views\Following\Follow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="docs\MySqlTransaction.xml" />

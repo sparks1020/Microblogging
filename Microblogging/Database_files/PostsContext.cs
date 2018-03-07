@@ -11,6 +11,7 @@ namespace Microblogging.Database_files
     {
         public DbSet<Microblog> Posts { get; set; }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Follow> Follows { get; set; }
 
         public PostsContext()
         {
