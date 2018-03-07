@@ -13,12 +13,12 @@ namespace Microblogging.Controllers
     public class FollowingController : Controller
     {
         [AuthenticationRequired]
-        public ActionResult Index(int Id)
+        public ActionResult Index(Follow Id)
         {
             using (var db = new PostsContext())
             {
                 var connections = db.Follows.Where(l => l.Id == Id).ToList();
-                var username = db.Accounts.Where(e => connections.Contains(e.Id));
+                //var username = db.Accounts.Where(e => connections.Contains(e.Id));
                 List<Follow> finalList = new List<Follow>();
                 foreach (var id in connections)
                 {
